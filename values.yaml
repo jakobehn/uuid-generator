@@ -41,31 +41,33 @@ gateway:
 github:
   ## The x509 PEM-formatted keyfile GitHub issued for you App.
   key: |
-    MIIEowIBAAKCAQEAtXUHPVFfa7zUG9svUiY59Ub2PoZudwR0wlfpEQc4k9I1DF6N
-    JiOeEBCRd3KZTvyapHk+AlWCowCjPgrshTYBimKuRhYHCWZ/CQ9GWdZpjMvFo42Q
-    Y7vLv+RdjZZMV1Th6Gs+eB1yd2QKSI8CYRbG1ct7UMoLEGxv9yyBa74RcoXp7+fN
-    /AsK7vCTP/NeTkakfdqV+VoPRxCh5b8XLP+d9gsY30NtfZl+hvhYoR+HDzrLIPoA
-    /Lg/vYvqsBrJs/Zv5O4jc1uddlq01FXtgeIPR7V7SVp4nSl7qUM0loHu78PFu5Ih
-    3kbqvB4e4868iYxCFh2G5KAB0RL2TE1pxokn/QIDAQABAoIBADZSEVe+22TiQ1EP
-    fYwHG4ScuKyhC8KfV+Cx9nh9g+dknzLTv0dylCfU/ecXLGPj5Ntl3DVQqenoD/ZL
-    yOBb+XwW7HrYr0SWJWNt6i6MrE5U1haPE3F3z5fjYko3eyUNqQ8tw6arkg/Bp/5u
-    qVStP9rSrljSExvYinAhJ6E8Zfa1NMlPvQ7ndBP99R12/+S57HxnOFWfQmy81Mo5
-    n27XZDFZZpYUESR6HEe9f1jTtPhaaCG8Rntci9w3d+jERXXi/5MlPlydWIriHdjw
-    EnAdaa02dgwdWThWC8M4DZmYxkdrvy56+yCVaUwt631jQhnu7iPCvrNM0tz3Kc54
-    UWYAXpUCgYEA4yq3O4pOkdDe1qcdWVQoW8915PE4L3bFOMCKM+W0FHV7RodK7y4u
-    IUHx1KIeXs3a11SRjkR/4q9jHlQCG4x/SH0oPQ8iCAIOPvfXk1JeF9mbOii3cFAA
-    uCXY3oPEBcNSaAugRPcQeoGy3tFj915bh4ntd/7OPEaKlaIcASdm4TcCgYEAzH0T
-    ksMZt+1v0McUI5ex/bMo7rblrjqmcZme32+oFxh93h7IhiHdD0sVOGAZJ/5djuEB
-    orQ2wXDrdI2FpV7TFpIhj0FFiMShUZyVK1oRn+Rff/Lo0yv1zsiqpFfXmufb87DU
-    eDaHJTefq7Sj500hGHZVNurIuhL+j7+1XuIaKmsCgYEAvyVNQttQ219eck3x4x1u
-    TDqX4AmdFkshDmzsnViWG3TzQthKlFFOXYuomhvD5E/g6bluNMCsvyiHBZj4oQeq
-    fmtZtW8LWqOoKxHOolb3d6gR9nEWUXnv8QNfpXRIN/UvXP8TX5RomDyULusP67DI
-    4ZaMa6DLFmrg56GdYNcvuScCgYBvFdtWNOp5wmCl2CAWncexfGxWEcF//piAyeVG
-    mA+GTGXEDpD8XNUMA8vJTlscINCOV6ldy+ya9U7TiDX7+iFN96CHg/vUKo1AGoHm
-    hQ1iANvoU/srDIyCAvzAPn//xMj1/y/NBkIwc6En0//eHUZHVbFBHhZhDwR+7rQG
-    kWmJdQKBgGupIXYiGT858DfjBIB6RL9YZMitn7lPXxuF7/MqcDygSoixh03dO8S4
-    F9xW8m0y82ktnQk18xhlazyae7SKQrEl/ZTOi0mRAnNanrV6UuXLnCtoaJY02uzf
-    eisaNbo90dafXcppuKSD74l59cny3gftZDButzRQVSq4D71Wmwvk
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEAwuvbT/05Xvrrie1LyiHBKpSLrFEJ/DW5/MpcR1UimhJvgIys
+    spe3axWsh5SeeH/TSnSc9VrxMP4ogeWh1JaX6bAnOhRiJt4nXap3hcPa11Yy3VLr
+    0s8KEJ/SJPexR7DPwKxWNGsA+XIdXoF/PY0ZM4aIwqmGpyNpwjaSJf/yVf0BQfqP
+    i/Frdx+sdk/VjRm3DCnY9Isg+kR6q4QsQfNc/iiXadvmdIAYuTC002mbnewLpGNo
+    9R9qpHPyCArRvQYWa/L23OwwqJRpPFZ3CO+wSJ8lVngZ983NBjI3s5aEBJi2CTnW
+    jJ9D3crFpZNNuEnkMbt9kzx2n5oBXoPmVpsCOQIDAQABAoIBABNEWQNJFniq+MlD
+    aXBrcbqRwFSiFgiWDvJL1l8+rRLpq5fbT96/XGP7Wnh0Wk2y5OHBMRqXiKu9E6fz
+    WNG4qP9yaA43oZQR9XYuuW3BdEpAvPpfjevihy4pfg4lZaKeeYqj/klkIk6F1x1W
+    U4tz/P+41p/XPfYbbALEfiG/cObK1POb4CWTB7q4yaU45jEDgFsmUE17av/YNazx
+    MszOb4doglkncUDvhKVDeQZvOa/ocUKhf3Wa0h/wtT2W0Fu/IRV8uDExZPkqRijT
+    AOgb2PpTCiRgj3bvlCxWzuRqDpVELhnYPA2om/wrckdkypGL9+lSfOdgAOlvcR8E
+    AtTOR1kCgYEA+zuqHrNAvw1WWXHEUP8JJPJ0EGJcmwBTwx+/4rxg7MtIlF5qSUrQ
+    4pNIpdQ/8Rl7ii5IZ64NGlzIVQu9LJoHFWemInajG7k7yvJhhB5T2oIQYdn4C/OK
+    NQ3IZf/otl4ijfKUnhwa/d3Sxxmtwel0GpPUuHLcGeej3GGwFMHkMEcCgYEAxp6q
+    FAABAJjfM/S3U8rvZnJIp8dibnPYoTZLIlHBDoP3GamaxqRl4cj0YHy+A2OOGSti
+    xEv18zlAtXmnRll5AP4QYRah/dWH6LK2rbcgQfhZoesz8tkRmTz6fJwq4Qp97Vz5
+    joPGhTLP03AxBxeHFqBqMv4yWfl4DxOLlcv++X8CgYBSa1R4Fd5bzwhQ952r5L8f
+    O9sPtPUkdIsGLFhLDfnONTJuWjsMKFs2uZLPtD313qJExsJCITtzNpUSMXOyOiWw
+    w/wgukLwSWhwP+v15+0idiDhuRxC73abyRXBQJ8blO5JGxfeduHz/t2zK51xTCEm
+    xvC2Qhgq928uUW3uoV026QKBgQC+P8ab57EOGGBcTQC5k34i/D8Z7sMbF34eVXo8
+    gmDQ/ZjYDPyDX39zeWCTd4kuh9LZyxQNANGyy1lvOvr+SL++Mp4P0XUTRdCsFVsk
+    JHASoMeCcF/PMxtHVAB/EbuE2d7rWQ5180VZ2uT1G9bqex/bjYaMF661Pl9A2bDv
+    qHowEwKBgGeYVITX++uYxngYsEri/c41S0KxIiB0Rc5f5x3WN3o0JuUa3MB6P5Gh
+    Wp0fG9731opyU43EyDGtctfbLbLIkgTozQqyrOqwKJp8sj5bRPxmgSoilTtmElkk
+    u7BPcUPDdKAW2Lm6d4E99H6Gr8MsnxqkaJhU6DLtk75MO5DPhafx
+    -----END RSA PRIVATE KEY-----
   ## This represents the unique ID for a GitHub App
   ## The value can be retrieved from the main App page or any inbound webhook payloads
   appID: 34823
@@ -75,4 +77,4 @@ github:
   ## Set a defaultSharedSecret if you want to use this one instance of the
   ## Github gateway with multiple Brigade projects. Leave the shared secret field
   ## blank in project-level configuration and this default will be used.
-  # defaultSharedSecret:
+  #defaultSharedSecret: 9FbwaTm04jWy92MoWzOjcsiw
