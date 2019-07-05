@@ -1,0 +1,84 @@
+brigade-github-app:
+  enabled: true
+
+  rbac:
+    enabled: true
+
+  serviceAccount:
+    create: true
+    name: 
+
+  ## Image configuration
+  registry: brigadecore
+  name: brigade-github-app
+  ## Image tags in this chart default to the value specified by appVersion in Chart.yaml
+  # tag: latest
+  # pullPolicy: "Always"
+
+  service:
+    name: brigade-github-app
+    type: LoadBalancer
+    externalPort: 80
+    internalPort: 7746
+
+  ingress:
+    enabled: true
+    ## Used to create an Ingress record.
+    hosts:
+    - brigade-ingress.westeurope.cloudapp.azure.com
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+
+
+  gateway:
+    ## The author associations who are allowed to have PRs built
+    ## Classes are: COLLABORATOR, CONTRIBUTOR, OWNER, NONE, MEMBER, FIRST_TIMER, FIRST_TME_CONTRIBUTOR
+    ## See https://developer.github.com/v4/enum/commentauthorassociation/
+    ## To completely disable pull request builds, leave this list blank.
+    allowedAuthorRoles:
+    - OWNER
+    - MEMBER
+    - COLLABORATOR
+
+  github:
+    ## The x509 PEM-formatted keyfile GitHub issued for you App.
+    key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEowIBAAKCAQEAq0RjhLXgsTxwR+aPDDUeF1mGAwDpi2fuwPqRsRdy1QeRfReh
+      BzzxS1P5eSlNIwrKZUJgKVJJWALyaCHzK57OFfIIgMm635yyhOuYJjxySxxTOvSd
+      3hbTROu9ugKl4Ub6KHxcEdMNyct5kBGFF9SBVtnYL6pgsp2OJ3YZDKzN1yVxL8yu
+      EakseUHaP7QtvRpjarrT2LpB1hBQcaM0IZpzNCDXD8an81OqUTuV4ynBB4jBrmm2
+      D3M2QCwetejkcRwUQblNAZOCTCkU6/KrocyLnKLs0nKeyoJN1E4ewJ6rnUxG0a+w
+      CXfQuGB4LV68QXF5ZCaj+mcB5GIWb429uVl4twIDAQABAoIBAAUT3vt1RPccOpv3
+      GvCatoysq8t1AHeQmkSAaUdd0Zq9QbP6ulxzkxfPoorUDaRnUn7UC/PNq7z/QV6S
+      +xmk+Kkv5s6irHaqt6Q3M+iWTDEr4s/RpsiJ1rOpZZOZNn/KUepXXYdtwW/lJ3J9
+      AnwlYbxIcx9epsVE5I0I9E8q5GNnfVwGOUwDmEK+z3YCC6VVKduQ+e1TEUvOXid0
+      9xT9kFq0xLXvuTQoYuMJMpnyXAaYxmNrnAqrbKsQEgwsANDzPLqOKYgjUnMRTohO
+      Ri6jm27GveURXvUERMRhFEP02g99ZJyLi6zw9kIaBz59X4TnJ6YsI8i5xI8H1Pl1
+      UEYP+IkCgYEA0tA0SbSxRm1qjSSxCLTBW7GWLNfyBsduqmOEWSnWzXX2NWKo1OLM
+      MDHzrBEC+CccdGqrseybG4xBVwVwmE1bdZep5mLVaRfkjkRfpCbePkQxgwA4jGY2
+      /bguNxFWakZcZ+bE6AXUNbU3HM2gOlft2k49kNUKlPED7tzgx1RQ2B0CgYEAz/oy
+      5fqPxqTMmhMKThchJBYNZgIZtI1K08wYdckrbMoCILoaYWApyxiM3niQMTt99X1z
+      g4Gld0MrU1FWCu1Un3tu6WnL2vbm5p+QEPpdoCs6YhKeurk/FpROMqYLQBvZ2rWq
+      2d5mceV6mq4OnQRvY+JsC4WZ6u9dGZGVaeTvg+MCgYBmk9qtdpe/7iOnlA/0bYec
+      Z1fscBMbS1VE4XGXtS0JAnoP1fbSx5yVYujvc8OfHeDRoMn0pG2AxQlSH5p+8T0s
+      heSs7rBrF64lr41eIW+ImsQAu03Iuz/Myx7puqzyv1PdVsO/Jn7wt0Ge6UsquHhK
+      /kEkxRUGDhRc2Osi8pr33QKBgQCdf13YJ32F8vs2msCtDnr8du7Cl0icIHvQFLlZ
+      SXTnN7uQyR59K3O65+aV+ztG7USgCdbWefGydV10BR5hvATfmXwOqx3DvkJx19gj
+      41XPm6zk5DDsOqj6Eml9lZzjebPrGrQ9tVxjWGMWjEVoxxkLzUYBG7XJ4mbgnA1I
+      WiS//QKBgC//M3btLLq+8DMZMFtOGWpPgoPGIdg6cDaOtGhJ/thjQkqJLXctKD49
+      B697yTP8I6OT8DSLH+PNaiWswUWctqhFmft2xz1z5mZlpoUJ3jaSHGK6G85NwwAJ
+      feMsFG6Z21qW53XQkLB/jUBKX7Iy0GLgdM/UbQn0JJ1Z/P6VIwTA
+      -----END RSA PRIVATE KEY-----
+
+    ## This represents the unique ID for a GitHub App
+    ## The value can be retrieved from the main App page or any inbound webhook payloads
+    appID: 34823
+    ## Trigger a Check Suite on Pull Requests
+    ## This will need to be set to true to enable running Check Suites on PRs originating from forks
+    checkSuiteOnPR: true
+    ## Set a defaultSharedSecret if you want to use this one instance of the
+    ## Github gateway with multiple Brigade projects. Leave the shared secret field
+    ## blank in project-level configuration and this default will be used.
+    #defaultSharedSecret: 9FbwaTm04jWy92MoWzOjcsiw
